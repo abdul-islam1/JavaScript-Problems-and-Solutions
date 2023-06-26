@@ -1,5 +1,6 @@
 "use strict";
 
+let isEmpty = false;
 const productOfArray = (arr) => {
   if (arr.length === 1) {
     return arr[0];
@@ -9,6 +10,7 @@ const productOfArray = (arr) => {
 };
 
 //test cases
+
 console.log(productOfArray([1, 2, 3])); // 6
 console.log(productOfArray([1, 2, 3, 10])); // 60
 console.log(productOfArray([5, 6, 10]));
