@@ -1,6 +1,7 @@
 "use strict";
 
 const all = function (arr, checkFunction) {
+  if (arr.length === 0) return true;
   if (arr.length === 1) return checkFunction(arr[0]);
   else {
     return Boolean(checkFunction(arr.pop()) * all(arr, checkFunction));
